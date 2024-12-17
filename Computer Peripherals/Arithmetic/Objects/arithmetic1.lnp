@@ -1,0 +1,3 @@
+".\Objects\arith.obj" 
+TO ".\Objects\arithmetic1" 
+PRINT(".\Listings\arithmetic1.m51")

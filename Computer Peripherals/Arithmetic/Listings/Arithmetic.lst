@@ -1,0 +1,55 @@
+A51 MACRO ASSEMBLER  ARITHMETIC                                                           11/16/2022 12:47:06 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\Arithmetic.obj
+ASSEMBLER INVOKED BY: F:\Software\C51\BIN\A51.EXE Arithmetic.asm SET(SMALL) DEBUG PRINT(.\Listings\Arithmetic.lst) OBJEC
+                      T(.\Objects\Arithmetic.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 000h
+                       2             
+0000 7420              3             mov a,#20h
+0002 75F010            4             mov b,#10h
+0005 25F0              5             add a,b
+0007 F540              6             mov 40h,a
+                       7             
+0009 7420              8             mov a,#20h
+000B 75F010            9             mov b,#10h
+000E 95F0             10             subb a,b
+0010 F529             11             mov 41,a
+                      12             
+0012 7420             13             mov a,#20h
+0014 75F002           14             mov b,#02h
+0017 A4               15             mul ab
+0018 F542             16             mov 42h,a
+                      17             
+001A 7420             18             mov a,#20h
+001C 75F010           19             mov b,#10h
+001F 84               20             div ab
+0020 F544             21             mov 44h,a
+                      22             
+0022 85F045           23             mov 45h,b
+0025 7415             24             mov a,#15h
+0027 04               25             inc a
+0028 F52E             26             mov 46,a
+                      27             
+002A 14               28             dec a
+002B F547             29             mov 47h,a
+                      30             end
+A51 MACRO ASSEMBLER  ARITHMETIC                                                           11/16/2022 12:47:06 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
